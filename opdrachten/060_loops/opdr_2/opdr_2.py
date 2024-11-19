@@ -1,5 +1,5 @@
 # Opdracht 2 loops
-# Naam student:
+# Naam student:Jacob van de Berg
 # Groep:
 
 # Hier komt je code...

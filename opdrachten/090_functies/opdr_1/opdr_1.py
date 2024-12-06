@@ -3,11 +3,29 @@
 # Groep:
 
 
-def write_to_file(afile, atext):
-    # je code komt hier
-    # het woordje pass hieronder kun je weghalen
-    pass
+def write_to_file(filename, text):
+    """
+    Schrijft tekst naar een bestand. Als het bestand al bestaat,
+    wordt de tekst toegevoegd aan de inhoud.
 
-my_tekst = "Schrijf dit maar even in een bestandje"
-my_file = "test.txt"
-write_to_file(my_file, my_tekst)
+    Parameters:
+    filename (str): De naam van het bestand.
+    text (str): De tekst die moet worden weggeschreven.
+    """
+    try:
+        with open(filename, "a", encoding="utf-8") as file:
+            file.write(text + "\n")
+        print(f"Tekst succesvol toegevoegd aan {filename}.")
+    except Exception as e:
+        print(f"Er is een fout opgetreden bij het schrijven naar {filename}: {e}")
+
+bestandsnaam = input("Voer de naam van het bestand in (bijv. 'test.txt'): ")
+while True:
+    tekst = input("Voer de tekst in die je wilt toevoegen: ")
+
+    write_to_file(bestandsnaam, tekst)
+
+    doorgaan = input("Wil je meer tekst toevoegen? (ja/nee): ").strip().lower()
+    if doorgaan != "ja":
+        print("Programma beëindigd.")
+        break

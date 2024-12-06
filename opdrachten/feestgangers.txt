@@ -1,0 +1,2 @@
+{'wat is je voornaam?': 'Jacob', 'wat is je achternaam?': 'Van de Berg', 'wat neem je mee voor drank?': '43', 'wat neem je mee voor eten?': 'Pesto'}
+{'wat is je voornaam?': 'Jacob', 'wat is je achternaam?': 'Van de Berg', 'wat neem je mee voor drank?': 'Vodka', 'wat neem je mee voor eten?': 'Lasgane'}
